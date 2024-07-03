@@ -1,5 +1,5 @@
 'use strict'
-import * as common from './scripts/components/common.js';
+import * as common from './components/common.js';
 import * as popUp from './public/scripts/components/popUp.js';
 import * as pr1_0 from './public/scripts/components/practics/practics1/practic0.js';
 import * as pr1_1 from './public/scripts/components/practics/practics1/practic1.js';
