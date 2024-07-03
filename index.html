@@ -1,0 +1,850 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing JS</title>
+    <link rel="icon" href="/public/img/favicon/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/public/styles/index.css">
+</head>
+
+<body class="page" id="page">
+
+    <div class="wrapper__body">
+
+        <div class="popUp" id="popUp">
+            <div class="popUp__controlPanel">
+                <div class="popUp__title" id="popUpTitle">
+                    <h2 id="popUp.result.title">
+                        <!-- Результат выполнения скрипта -->
+                    </h2>
+                </div>
+                <div class="popUp__icon">
+                    <img src="../public/img/popUp/controlPanel/controlPanel__ico_cross.svg" alt="#" id="ico__closeCross">
+                </div>
+    
+            </div>
+            <div class="popUp__Result">
+                <p class="text popUp__Result_text" id="result"></p>
+                <input class="form__input_number popUp__input_number" type="number" name="number__input" id="popUp_input" placeholder="Новое значение">
+            </div>
+            
+        </div>
+
+        <div class="relaxBox" id="relaxBox">
+            <div class="relax__textBlock">
+                <q class="text_relax" id="textRelax"></q> 
+                <p class="text_relax">Суровая правда жизни.</p>
+                <br>
+                <p class="text_relax">Для того чтобы выйти из Релакс режима и почистить чакры,<br>жмякни в любом месте, по картинке</p>
+            </div>
+        </div>
+
+        <div class="index__wrapper" id="page.blur">
+
+            <!-- Секция с приветствием -->
+            <section class="wrapper" id="s_0">
+                <header class="page__header page__header_historyBox">
+                    <div class="page-header__title header__title_historyBox">
+                        <h1 id="intTitle"></h1>
+
+                    </div>
+                    <div class="box__activateRelaxImg" id="box__activateRelaxImg">
+                        <button id="btnRelaxMode">RELAX MODE</button>
+                    </div>
+                </header>
+
+                <footer class="page__footer">
+
+                    <div class="page-footer__icon-box">
+                        <img class="page-footer__icon" src="../public/img/contentPage/ico_mouse_arrow.png" alt="#" id="pageFooterIconMouse">
+                    </div>
+
+                </footer>
+
+            </section>
+
+            <!-- Интересные факты о JS -->
+            <section class="wrapper wrapper_historyBox" id="s_1">
+
+                <header class="page__header page__header_historyBox">
+                    <div class="page-header__title header__title_historyBox">
+                        <h1 id="page__title">Факты о JS</h1>
+                    </div>
+                </header>
+
+                <div class="content_GorizontalBox">
+
+                    <content class="page__content page__content_left" id="pageContentLeftRadius1">
+                        <div class="content__col content__col_history">
+
+                            <div class="content__title">
+                                <h2 id="title_history">Создание и становление</h2>
+                            </div>
+
+                            <div class="page__textBox">
+                                <ul class="content__list" id="content__list_history">
+                                    <li class="content__item"><b class="bold_black">1995 год:</b> JavaScript был создан Бренданом Эйхом (Brendan Eich) в течение десяти дней, работая в Netscape Communications Corporation. Изначально язык назывался Mocha, затем переименован в LiveScript, и наконец, в JavaScript.</li>
+                                    <li class="content__item"><b class="bold_black">1996 год:</b> Microsoft создала свою собственную реализацию языка под названием JScript для Internet Explorer.</li>
+                                    <li class="content__item"><b class="bold_black">1997 год:</b> JavaScript был представлен для стандартизации в ECMA International.ECMAScript стал официальным именем стандартизированной версии JavaScript.</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </content>
+
+                    <content class="page__content page__content_right" id="pageContentLeftRadius2">
+                        <div class="content__col content__col_history">
+
+                            <div class="content__title">
+                                <h2 id="title_evolution">Эволюция</h2>
+                            </div>
+
+                            <div class="page__textBox">
+                                <ul class="content__list" id="content__list_evolution">
+                                    <li class="content__item"><b class="bold_black">2005 год:</b> Благодаря технологии AJAX (Asynchronous JavaScript and XML), JavaScript стал важной частью интерактивных веб-приложений.</li>
+                                    <li class="content__item"><b class="bold_black">2009 год:</b> Появление Node.js, позволившее запускать JavaScript на сервере.</li>
+                                    <li class="content__item"><b class="bold_black">2015 год:</b> Выпуск ECMAScript 6 (ES6), который представил множество новых функций и улучшений, таких как стрелочные функции, классы, модули и шаблонные строки.</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </content>
+
+                </div>
+
+                <div class="content_GorizontalBox">
+
+                    <content class="page__content page__content_left" id="pageContentLeftRadius3">
+                        <div class="content__col content__col_history">
+
+                            <div class="content__title">
+                                <h2 id="title_history">Где используется?</h2>
+                            </div>
+
+                            <div class="page__textBox">
+                                <ul class="content__list">
+                                    <li class="content__item"><b class="bold_black">Интерактивные веб-страницы:</b><i>JavaScript позволяет добавлять интерактивные элементы на веб-страницы, такие как анимации, динамическое обновление контента, формы и валидацию ввода.</i></li>
+                                    <li class="content__item"><b class="bold_black">Создание веб-приложений:</b><i>JavaScript используется в разработке одностраничных приложений (SPA) с использованием фреймворков и библиотек, таких как React, Angular, и Vue.js.</i></li>
+                                    <li class="content__item"><b class="bold_black">Работа с сервером:</b><I>Благодаря Node.js, JavaScript может использоваться для создания серверных приложений, работающих на стороне сервера.</I></li>
+                                    <li class="content__item"><b class="bold_black">Мобильные приложения:</b> С помощью платформ, таких как React Native, можно создавать мобильные приложения.</li>
+                                    <li class="content__item"><b class="bold_black">Игры:</b><i>JavaScript и WebGL позволяют создавать игры, работающие в браузере.</i></li>
+                                    <li class="content__item"><b class="bold_black">Интернет вещей (IoT):</b><i>JavaScript используется в некоторых проектах IoT для управления устройствами.</i></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </content>
+
+                    <content class="page__content page__content_right" id="pageContentLeftRadius4">
+
+                        <div class="content__col content__col_history">
+                            <div class="content__title">
+                                <h2 id="title_evolution">Где не используется?</h2>
+                            </div>
+
+                            <div class="page__textBox">
+                                <ul class="content__list">
+                                    <li class="content__item"><b class="bold_black">Высокопроизводительные вычисления:</b><i>JavaScript не подходит для задач, требующих высоких вычислительных мощностей, таких как сложные математические вычисления или обработка больших объемов данных в реальном времени.</i></li>
+                                    <li class="content__item"><b class="bold_black">Системное программирование:</b><i>Для задач низкоуровневого системного программирования (работа с операционной системой, драйверами и т.п.) лучше использовать языки, такие как C или C++.</i></li>
+                                    <li class="content__item"><b class="bold_black">Мобильные приложения без веб-технологий:</b><I>Для создания мобильных приложений, которые не зависят от веб-технологий, лучше использовать нативные языки платформы, такие как Swift для iOS или Kotlin для Android.</I></li>
+                                    <li class="content__item"><b class="bold_black">Программирование микроконтроллеров:</b>Для работы с микроконтроллерами, используемыми в встраиваемых системах, обычно предпочтительны языки C или Assembly.</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </content>
+
+                </div>
+
+                <footer class="page__footer">
+
+                    <div class="page-footer__icon-box">
+                        <img class="page-footer__icon" src="/public/img/contentPage/ico_mouse_arrow.png" alt="#" id="pageFooterIconMouse">
+                    </div>
+
+                </footer>
+
+            </section>
+
+            <!-- Секция с 1-практической -->
+            <section class="wrapper" id="s_2">
+
+                <header class="page__header">
+                    <div class="page-header__title">
+                        <h1 id="page__title">Практическая работа №1: Типы данных. Приведение типов в JS. Циклы</h1>
+                    </div>
+
+                </header>
+
+                <content class="page__content">
+
+                    <div class="page__contentBoxRow" id="page1ContentBoxRow1">
+                        <!-- Практическая 1.0 -->
+                        <div class="content__col">
+                            <div class="form form__data form__data_padding">
+                                <div class="form__header">
+                                    <h2>Практическая 1.0.</h2>
+                                </div>
+                                <div class="form__content">
+                                    <div class="form__description">
+                                        <p class="form__text">
+                                            Cоздать переменную, узнать ее тип, 
+                                            добавить вывод на экран текста, в зависимости от значения (if else)
+                                        </p>
+                                    </div>
+                                    <div class="form__input">
+
+                                        <div class="form__input_top">
+                                            <p class="form__text" id="wt_result_1_0"></p>
+                                            <button class="form__button" id="1_btn_pr_1_0">Получить значения переменных</button>
+                                        </div>
+
+                                        <div class="form__input_bottom">
+                                            <button class="form__button no_active_button" id="2_btn_pr_1_0" disabled="true">Запустить скрипт</button>
+                                        </div>
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Практическая 1.1 -->
+                        <div class="content__col">
+                            <div class="form form__data form__data_padding">
+                                <div class="form__header">
+                                    <h2>Практическая 1.1.</h2>
+                                </div>
+                                <div class="form__content">
+                                    <div class="form__description">
+                                        <p class="form__text">
+                                            Запросить у пользователя знак зодиака, <br>
+                                            И в зависимости от ответа выдать <br>
+                                            Всплывающее окно приветствия (switch)
+                                        </p>
+                                    </div>
+                                    <div class="form__input">
+
+                                        <div class="form__input_top">
+                                            <label class="form__label" for="zodiac-sign">Выберите ваш знак зодиака:</label>
+                                            <select class="form__select" id="select_zodiac" name="zodiac-sign">
+                                                <option class="form__option" value="capricorn">Козерог</option>
+                                                <option class="form__option" value="aquarius">Водолей</option>
+                                                <option class="form__option" value="pisces">Рыбы</option>
+                                                <option class="form__option" value="aries">Овен</option>
+                                                <option class="form__option" value="taurus">Телец</option>
+                                                <option class="form__option" value="gemini">Близнецы</option>
+                                                <option class="form__option" value="cancer">Рак</option>
+                                                <option class="form__option" value="leo">Лев</option>
+                                                <option class="form__option" value="virgo">Дева</option>
+                                                <option class="form__option" value="libra">Весы</option>
+                                                <option class="form__option" value="scorpio">Скорпион</option>
+                                                <option class="form__option" value="sagittarius">Стрелец</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="form__input_bottom">
+                                            <button class="form__button" id="2_btn_pr_1_1">Запустить скрипт</button>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Практическая 1.2 -->
+                        <div class="content__col">
+                            <div class="form form__data form__data_padding">
+                            <div class="form__header">
+                                <h2>Практическая 1.2.</h2>
+                            </div>
+                            <div class="form__content">
+                                <div class="form__description">
+                                    <p class="form__text">
+                                        Вывести все числа от 1 до 40, 
+                                        с использованием 3-х разных циклов
+                                    </p>
+                                </div>
+                                <div class="form__input">
+
+                                    <div class="form__input_top"></div>
+
+                                    <div class="form__input_bottom">
+                                        <button class="form__button" id="2_btn_pr_1_2">Запустить скрипт</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                        <!-- Практическая 1.3 -->
+                        <div class="content__col">
+                            <div class="form form__data form__data_padding">
+                                <div class="form__header">
+                                    <h2>Практическая 1.3.</h2>
+                                </div>
+                                <div class="form__content">
+                                    <div class="form__description">
+                                        <p class="form__text">
+                                            Cоздайте вирусную страницу <br>
+                                            С постоянно повторяющемся сообщением
+                                        </p>
+                                    </div>
+                                    <div class="form__input">
+
+                                        <div class="form__input_top"></div>
+
+                                        <div class="form__input_bottom">
+                                            <button class="form__button" id="2_btn_pr_1_3">Запустить вирус</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="page__contentBoxRow" id="page1ContentBoxRow2">
+                        <!-- Практическая 1.4 -->
+                        <div class="content__col">
+                            <div class="form form__data form__data_padding">
+                                <div class="form__header">
+                                    <h2>Практическая 1.4.</h2>
+                                </div>
+                                <div class="form__content">
+                                    <div class="form__description">
+                                        <p class="form__text">
+                                            Запросить любое число больше 5, в случае правильного ответа выдать окошко с поздравлением, <br>
+                                            В случае неправильного ответа вывести повторное окно с вопросом <br>
+                                        </p>
+                                    </div>
+                                    <div class="form__input">
+
+                                        <div class="form__input_top">
+                                            <input class="form__input_number" type="number" name="number__input" id="num_inp_1_4" placeholder="Введите число, которое больше 5">
+                                        </div>
+
+                                        <div class="form__input_bottom">
+                                            <button class="form__button no_active_button" id="2_btn_pr_1_4" disabled="true">Запустить скрипт</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Практическая 1.5 -->
+                        <div class="content__col">
+                            <div class="form form__data form__data_padding">
+                                <div class="form__header">
+                                    <h2>Практическая 1.5.</h2>
+                                </div>
+                                <div class="form__content">
+                                    <div class="form__description">
+                                        <p class="form__text">
+                                            Выведите четные числа от 8 до 20
+                                        </p>
+                                    </div>
+                                    <div class="form__input">
+
+                                        <div class="form__input_top"></div>
+
+                                        <div class="form__input_bottom">
+                                            <button class="form__button" id="2_btn_pr_1_5">Запустить скрипт</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Практическая 1.6 -->
+                        <div class="content__col">
+                            <div class="form form__data form__data_padding">
+                                <div class="form__header">
+                                    <h2>Практическая 1.6.</h2>
+                                </div>
+                                <div class="form__content">
+                                    <div class="form__description">
+                                        <p class="form__text">
+                                            Выведите нечетные числа от 1 до 7,<br>
+                                            Пропустив 5
+                                        </p>
+                                    </div>
+                                    <div class="form__input">
+
+                                        <div class="form__input_top"></div>
+
+                                        <div class="form__input_bottom">
+                                            <button class="form__button" id="2_btn_pr_1_6">Запустить скрипт</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="content__col"></div>
+
+                    </div>
+
+                </content>
+
+                <footer class="page__footer">
+
+                    <div class="page-footer__icon-box">
+                        <img class="page-footer__icon" src="/public/img/contentPage/ico_mouse_arrow.png" alt="#" id="pageFooterIconMouse">
+                    </div>
+
+                </footer>
+                
+            </section>
+
+            <!-- Секция с 2-практической -->
+            <section class="wrapper" id="s_3">
+
+                <header class="page__header">
+                    <div class="page-header__title">
+                        <h1 id="page__title">Практическая работа №2: Массивы и функции</h1>
+                    </div>
+
+                </header>
+
+                <content class="page__content">
+
+                    <div class="page__contentBoxRow" id="page2ContentBoxRow1">
+                        <div class="content__col">
+
+                            <!-- Практическая 2.1 -->
+                            <div class="form form__data form__data_padding">
+                                <div class="form__header">
+                                    <h2>Практическая 2.1.</h2>
+                                </div>
+                                <div class="form__content">
+                                    <div class="form__description">
+                                        <p class="form__text">
+                                            Создать массив 3 разными способами
+                                        </p>
+                                    </div>
+                                    <div class="form__input">
+
+                                        <div class="form__input_top"></div>
+
+                                        <div class="form__input_bottom">
+                                            <button class="form__button" id="2_btn_pr_2_1">Запустить скрипт</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="content__col">
+
+                            <!-- Практическая 2.2 -->
+                            <div class="form form__data form__data_padding">
+                                <div class="form__header">
+                                    <h2>Практическая 2.2.</h2>
+                                </div>
+                                <div class="form__content">
+                                    <div class="form__description">
+                                        <p class="form__text">
+                                            Выведите на экран 5 член вашего массива затем измените его значение 
+                                        </p>
+                                    </div>
+                                    <div class="form__input">
+
+                                        <div class="form__input_top"></div>
+
+                                        <div class="form__input_bottom">
+                                            <button class="form__button" id="2_btn_pr_2_2">Запустить скрипт</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="content__col">
+                            <!-- Практическая 2.3 -->
+                            <div class="form form__data form__data_padding">
+                                <div class="form__header">
+                                    <h2>Практическая 2.3.</h2>
+                                </div>
+                                <div class="form__content">
+                                    <div class="form__description">
+                                        <p class="form__text">
+                                            Узнайте длину вашего массива и выведите ее значение при наведении на любой элемент
+                                        </p>
+                                    </div>
+                                    <div class="form__input">
+
+                                        <div class="form__input_top"></div>
+
+                                        <div class="form__input_bottom">
+                                            <button class="form__button" id="2_btn_pr_2_3">Запустить скрипт</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="content__col">
+
+                            <!-- Практическая 2.4 -->
+                            <div class="form form__data form__data_padding">
+                                <div class="form__header">
+                                    <h2>Практическая 2.4.</h2>
+                                </div>
+                                <div class="form__content">
+                                    <div class="form__description">
+                                        <p class="form__text">
+                                            Выведите все элементы массива, используя цикл for
+                                        </p>
+                                    </div>
+                                    <div class="form__input">
+
+                                        <div class="form__input_top"></div>
+
+                                        <div class="form__input_bottom">
+                                            <button class="form__button" id="2_btn_pr_2_4">Запустить скрипт</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="page__contentBoxRow" id="page2ContentBoxRow2">
+                        <div class="content__col">
+
+                            <!-- Практическая 2.5 -->
+                            <div class="form form__data form__data_padding">
+                                <div class="form__header">
+                                    <h2>Практическая 2.5.</h2>
+                                </div>
+                                <div class="form__content">
+                                    <div class="form__description">
+                                        <p class="form__text">
+                                            Создайте 2 массива. Объедините их в один и выведите на экран полученный массив
+                                        </p>
+                                    </div>
+                                    <div class="form__input">
+
+                                        <div class="form__input_top"></div>
+
+                                        <div class="form__input_bottom">
+                                            <button class="form__button" id="2_btn_pr_2_5">Запустить скрипт</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="content__col">
+
+                            <!-- Практическая 2.6 -->
+                            <div class="form form__data form__data_padding">
+                                <div class="form__header">
+                                    <h2>Практическая 2.6.</h2>
+                                </div>
+                                <div class="form__content">
+                                    <div class="form__description">
+                                        <p class="form__text">
+                                            Удалите последний член получившегося массива и выведите это значение на экран
+                                        </p>
+                                    </div>
+                                    <div class="form__input">
+
+                                        <div class="form__input_top"></div>
+
+                                        <div class="form__input_bottom">
+                                            <button class="form__button" id="2_btn_pr_2_6">Запустить скрипт</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="content__col">
+
+                            <!-- Практическая 2.7 -->
+                            <div class="form form__data form__data_padding">
+                                <div class="form__header">
+                                    <h2>Практическая 2.7.</h2>
+                                </div>
+                                <div class="form__content">
+                                    <div class="form__description">
+                                        <p class="form__text">
+                                            Удалите последний член получившегося массива и выведите это значение на экран
+                                        </p>
+                                    </div>
+                                    <div class="form__input">
+
+                                        <div class="form__input_top"></div>
+
+                                        <div class="form__input_bottom">
+                                            <button class="form__button" id="2_btn_pr_2_7">Запустить скрипт</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="content__col">
+
+                            <!-- Практическая 2.8 -->
+                            <div class="form form__data form__data_padding">
+                                <div class="form__header">
+                                    <h2>Практическая 2.8.</h2>
+                                </div>
+                                <div class="form__content">
+                                    <div class="form__description">
+                                        <p class="form__text">
+                                            Добавьте новый элемент в начало вашего объединенного массива
+                                        </p>
+                                    </div>
+                                    <div class="form__input">
+
+                                        <div class="form__input_top"></div>
+
+                                        <div class="form__input_bottom">
+                                            <button class="form__button" id="2_btn_pr_2_8">Запустить скрипт</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>  
+                    </div>
+
+                    <div class="page__contentBoxRow" id="page2ContentBoxRow3">
+                        <div class="content__col">
+
+                            <!-- Практическая 2.9 -->
+                            <div class="form form__data form__data_padding">
+                                <div class="form__header">
+                                    <h2>Практическая 2.9.</h2>
+                                </div>
+                                <div class="form__content">
+                                    <div class="form__description">
+                                        <p class="form__text">
+                                            Получите сегодняшнюю дату и выведите ее на экран
+                                        </p>
+                                    </div>
+                                    <div class="form__input">
+
+                                        <div class="form__input_top"></div>
+
+                                        <div class="form__input_bottom">
+                                            <button class="form__button" id="2_btn_pr_2_9">Запустить скрипт</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="content__col">
+
+                            <!-- Практическая 2.10 -->
+                            <div class="form form__data form__data_padding">
+                                <div class="form__header">
+                                    <h2>Практическая 2.10.</h2>
+                                </div>
+                                <div class="form__content">
+                                    <div class="form__description">
+                                        <p class="form__text">
+                                            Выведите сегодняшнюю дату в формате 11 ноября 2020 года
+                                        </p>
+                                    </div>
+                                    <div class="form__input">
+
+                                        <div class="form__input_top"></div>
+
+                                        <div class="form__input_bottom">
+                                            <button class="form__button" id="2_btn_pr_2_10">Запустить скрипт</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="content__col">
+
+                            <!-- Практическая 2.11 -->
+                            <div class="form form__data form__data_padding">
+                                <div class="form__header">
+                                    <h2>Практическая 2.11.</h2>
+                                </div>
+                                <div class="form__content">
+                                    <div class="form__description">
+                                        <p class="form__text">
+                                            Напишите функцию, подсчитывающую произведение двух случайных чисел в промежутке от нуля до 50
+                                        </p>
+                                    </div>
+                                    <div class="form__input">
+
+                                        <div class="form__input_top"></div>
+
+                                        <div class="form__input_bottom">
+                                            <button class="form__button" id="2_btn_pr_2_11">Запустить скрипт</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="content__col"></div>
+
+                </div>
+                </content>
+
+                <footer class="page__footer">
+
+                    <div class="page-footer__icon-box">
+                        <img class="page-footer__icon" src="/public/img/contentPage/ico_mouse_arrow.png" alt="#" id="pageFooterIconMouse">
+                    </div>
+
+                </footer>
+                
+            </section>
+            
+            <!-- Секция с тестом -->
+            <section class="wrapper test__wrapper" id="s_4">
+                <header class="page__header page__header_historyBox">
+                    <div class="page-header__title header__title_historyBox" id="titleForTestPage">
+                        
+                    </div>
+                </header>
+
+                <content class="frame__test">
+                    <div class="frame__wrapper" id="testContent">
+                    
+                        <div class="frame__test_left" id="frameTestLeft">
+
+                            <div class="test_visiblity" id="testBox">
+                                <div class="test__header">
+
+                                    <div class="testHeader__col testHeader__col_left" id="testCursor"></div>
+                                    <div class="testHeader__col testHeader__col_right" id="score"></div>
+
+                                </div>
+
+                                <div class="test__content">
+
+                                    <div class="test__quoestionBox" id="question"></div>
+
+                                    <div class="test__optionBox">
+                                    
+                                        <form class="testing__selectors" id="testingSelectors">
+
+                                            <div class="optionBox__row">
+                                                <div class="optionBox__col">
+                                                    <label for="answers" class="optionBox__label">A:</label><br>
+                                                    <input type="radio" name="answers" value="" class="optionBox__radio" id="radioA">
+                                                    <label for="answers" class="optionBox__label" id="labelA"></label><br>
+                                                </div>
+
+                                                <div class="optionBox__col">
+                                                    <label for="answers" class="optionBox__label">B:</label><br>
+                                                    <input type="radio" name="answers" value="" class="optionBox__radio" id="radioB">
+                                                    <label for="answers" class="optionBox__label" id="labelB"></label><br>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="optionBox__row">
+
+                                                <div class="optionBox__col">
+                                                    <label for="answers" class="optionBox__label">C:</label><br>
+                                                    <input type="radio" name="answers" value="" class="optionBox__radio" id="radioC">
+                                                    <label for="answers" class="optionBox__label" id="labelC"></label><br>
+                                                </div>
+
+                                                <div class="optionBox__col">
+                                                    <label for="answers" class="optionBox__label">D:</label><br>
+                                                    <input type="radio" name="answers" value="" class="optionBox__radio" id="radioD">
+                                                    <label for="answers" class="optionBox__label" id="labelD"></label><br>
+                                                </div>
+                                            </div>
+
+                                        </form>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            <div class="test__blockResult" id="testResult">
+                                <div class="testResult__header" id="testResultHeader"></div>
+                                <div class="testResult__answers" id="testResult__answers"></div>
+                            </div>
+
+                            <div class="frame__wrapper_button">
+                                <button class="form__button" id="btnStartTest"></button>
+                            </div>
+                            
+                        </div>
+
+                        <div class="frame__test_right" id="testBoxIcoNext">
+                            <img src="/public/img/testing/arrow_next.png" alt="#" id="nextQuestion">
+
+                        </div>
+
+                    </div>
+                    
+
+
+                </content>
+
+
+            </section>
+
+        </div>
+
+        <footer class="landing__footer" id="landing__footer">
+            <div class="footer__col col_left">
+                
+                <p class="footer__text">&copy; 2024 Евдокимова Анастасия Петровна. Все права защищены.</p>
+            
+                <p class="footer__text">
+                    Все материалы на этом сайте, включая текст, графику, логотипы, изображения и программное обеспечение, являются интеллектуальной собственностью и защищены авторским правом.
+                    <br>Любое использование материалов сайта, включая копирование, распространение, изменение и публикацию, без предварительного письменного согласия владельца авторских прав строго запрещено.<br><br>
+                </p>
+            
+            </div>
+
+            <div class="footer__col col_right">
+                <div class="footer__row">
+                    <img src="/public/img/footer/arrow-icon-up.png" alt="#" id="imgReturn">
+                    <p class="footer__text" id="returnText">
+                        Вернуться
+                    </p>
+                </div>
+                
+            </div>
+
+
+
+        </footer>
+
+    </div>
+
+<script type="module" src="/public/scripts/index.js"></script>
+
+</html>

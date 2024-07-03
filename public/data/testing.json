@@ -1,0 +1,64 @@
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "Что такое JavaScript?",
+            "options": ["Язык программирования", "Стиль оформления", "Процессор", "Операционная система"],
+            "answer": "Язык программирования"
+        },
+        {
+            "id": 2,
+            "question": "Как объявить переменную в JavaScript?",
+            "options": ["var", "let", "const", "Все вышеперечисленное"],
+            "answer": "Все вышеперечисленное"
+        },
+        {
+            "id": 3,
+            "question": "Какой метод используется для вывода сообщений в консоль?",
+            "options": ["console.log()", "print()", "echo()", "write()"],
+            "answer": "console.log()"
+        },
+        {
+            "id": 4,
+            "question": "Что означает '===' в JavaScript?",
+            "options": ["Присваивание значения", "Сравнение по значению и типу", "Логическое И", "Логическое ИЛИ"],
+            "answer": "Сравнение по значению и типу"
+        },
+        {
+            "id": 5,
+            "question": "Какой метод используется для добавления элемента в конец массива?",
+            "options": ["push()", "pop()", "shift()", "unshift()"],
+            "answer": "push()"
+        },
+        {
+            "id": 6,
+            "question": "Как получить элемент по ID в JavaScript?",
+            "options": ["document.getElementById()", "document.querySelector()", "document.getElementsByClassName()", "document.getElementsByTagName()"],
+            "answer": "document.getElementById()"
+        },
+        {
+            "id": 7,
+            "question": "Какое значение возвращает метод Array.pop()?",
+            "options": ["Удаленный элемент", "Новый размер массива", "Первый элемент массива", "undefined"],
+            "answer": "Удаленный элемент"
+        },
+        {
+            "id": 8,
+            "question": "Что такое замыкание в JavaScript?",
+            "options": ["Функция внутри другой функции, которая может обращаться к внешним переменным", "Метод массива", "Цикл", "Объект"],
+            "answer": "Функция внутри другой функции, которая может обращаться к внешним переменным"
+        },
+        {
+            "id": 9,
+            "question": "Как создать объект в JavaScript?",
+            "options": ["let obj = {}", "let obj = []", "let obj = ()", "let obj = <>"],
+            "answer": "let obj = {}"
+        },
+        {
+            "id": 10,
+            "question": "Как проверить тип переменной в JavaScript?",
+            "options": ["typeof", "instanceof", "typeof и instanceof", "None of the above"],
+            "answer": "typeof и instanceof"
+        }
+    ]
+}
