@@ -2,7 +2,7 @@
 
 import * as common from '../components/common.js';
 
-const JSONFilePath = '../../public/data/testing.json';
+const JSONFilePath = '/LandingJS/public/data/testing.json';
 const messages = ['\nК сожалению тест не пройден :(', '\nПоздравляем вы успешно прошли тест :)'];
 const btnStart = common.Element('btnStartTest');
 const btnNext = common.Element('nextQuestion');
