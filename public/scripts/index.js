@@ -1,25 +1,26 @@
 'use strict'
 import * as common from './components/common.js';
-import * as popUp from './public/scripts/components/popUp.js';
-import * as pr1_0 from './public/scripts/components/practics/practics1/practic0.js';
-import * as pr1_1 from './public/scripts/components/practics/practics1/practic1.js';
-import * as pr1_2 from '/public/scripts/components/practics/practics1/practic2.js';
-import * as pr1_3 from '/public/scripts/components/practics/practics1/practic3.js';
-import * as pr1_4 from '/public/scripts/components/practics/practics1/practic4.js';
-import * as pr1_5 from '/public/scripts/components/practics/practics1/practic5.js';
-import * as pr1_6 from '/public/scripts/components/practics/practics1/practic6.js';
-import * as pr2_1 from '/public/scripts/components/practics/practics2/practic1.js';
-import * as pr2_2 from '/public/scripts/components/practics/practics2/practic2.js';
-import * as pr2_3 from '/public/scripts/components/practics/practics2/practic3.js';
-import * as pr2_4 from '/public/scripts/components/practics/practics2/practic4.js';
-import * as pr2_5 from '/public/scripts/components/practics/practics2/practic5.js';
-import * as pr2_6 from '/public/scripts/components/practics/practics2/practic6.js';
-import * as pr2_7 from '/public/scripts/components/practics/practics2/practic7.js';
-import * as pr2_8 from '/public/scripts/components/practics/practics2/practic8.js';
-import * as pr2_9 from '/public/scripts/components/practics/practics2/practic9.js';
-import * as pr2_10 from '/public/scripts/components/practics/practics2/practic10.js';
-import * as pr2_11 from '/public/scripts/components/practics/practics2/practic11.js';
-import * as testing from '/public/scripts/components/testing.js';
+import * as popUp from './components/popUp.js';
+import * as testing from './components/testing.js';
+import * as pr1_0 from './components/practics/practics1/practic0.js';
+import * as pr1_1 from './components/practics/practics1/practic1.js';
+import * as pr1_2 from './components/practics/practics1/practic2.js';
+import * as pr1_3 from './components/practics/practics1/practic3.js';
+import * as pr1_4 from './components/practics/practics1/practic4.js';
+import * as pr1_5 from './components/practics/practics1/practic5.js';
+import * as pr1_6 from './components/practics/practics1/practic6.js';
+import * as pr2_1 from './components/practics/practics2/practic1.js';
+import * as pr2_2 from './components/practics/practics2/practic2.js';
+import * as pr2_3 from './components/practics/practics2/practic3.js';
+import * as pr2_4 from './components/practics/practics2/practic4.js';
+import * as pr2_5 from './components/practics/practics2/practic5.js';
+import * as pr2_6 from './components/practics/practics2/practic6.js';
+import * as pr2_7 from './components/practics/practics2/practic7.js';
+import * as pr2_8 from './components/practics/practics2/practic8.js';
+import * as pr2_9 from './components/practics/practics2/practic9.js';
+import * as pr2_10 from './components/practics/practics2/practic10.js';
+import * as pr2_11 from './components/practics/practics2/practic11.js';
+
 
 // #Common && PopUp
 // Закрытие popUp
