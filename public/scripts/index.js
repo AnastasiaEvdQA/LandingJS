@@ -1,8 +1,8 @@
 'use strict'
-import * as common from '/public/scripts/components/common.js';
-import * as popUp from '/public/scripts/components/popUp.js';
-import * as pr1_0 from '/public/scripts/components/practics/practics1/practic0.js';
-import * as pr1_1 from '/public/scripts/components/practics/practics1/practic1.js';
+import * as common from './components/common.js';
+import * as popUp from './public/scripts/components/popUp.js';
+import * as pr1_0 from './public/scripts/components/practics/practics1/practic0.js';
+import * as pr1_1 from './public/scripts/components/practics/practics1/practic1.js';
 import * as pr1_2 from '/public/scripts/components/practics/practics1/practic2.js';
 import * as pr1_3 from '/public/scripts/components/practics/practics1/practic3.js';
 import * as pr1_4 from '/public/scripts/components/practics/practics1/practic4.js';
