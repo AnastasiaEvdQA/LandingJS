@@ -110,7 +110,7 @@ export function handleScroll(deltaY){
 
             scrollTo(currentSection + 1);
             bodyBG.style.backgroundColor = 'rgba(0, 0, 0, '+Number(0.733+0.100)+')';
-            bodyBG.style.backgroundImage = `url('/public/img/Background/background_logo.webp')`;
+            bodyBG.style.backgroundImage = `url('LandingJS/public/img/Background/background_logo.webp')`;
             bodyBG.style.backgroundBlendMode = 'darken';
         } else if (deltaY < 0) {
             // Прокрутка вверх
@@ -131,7 +131,7 @@ function scrollTo(index) {
         currentSection = index;
 
             if (currentSection == 0){
-                bodyBG.style.backgroundImage = `url('/public/img/Background/background_logo_2.png')`;
+                bodyBG.style.backgroundImage = `url('LandingJS/public/img/Background/background_logo_2.png')`;
                 bodyBG.style.backgroundBlendMode = '';
             } 
    }
@@ -188,7 +188,7 @@ const textRelax = Element('textRelax');
 function bodyDefaultStyle(){
     isRelaxMode = false;
     bodyBG.style.backgroundColor = 'rgba(0, 0, 0, 0.733)';
-    bodyBG.style.backgroundImage = `url('/public/img/Background/background_logo_2.png')`;
+    bodyBG.style.backgroundImage = `url('LandingJS/public/img/Background/background_logo_2.png')`;
     relaxBox.style.visibility = 'hidden';
     textRelax.innerText = '';
     bodyBG.style.backgroundBlendMode = '';
